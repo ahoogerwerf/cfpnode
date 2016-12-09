@@ -1,0 +1,20 @@
+{
+  "name": "test1",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "ahoogerwerf <ahoogerwerf@cfpwood.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}

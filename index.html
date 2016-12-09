@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="githubViewer">
+
+<head>
+	<script data-require="angular.js@1.2.26" data-semver="1.2.26" src="https://code.angularjs.org/1.2.26/angular.js"></script>
+
+	<script src="script.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+	<h1>{{message}}</h1>
+	<div>{{ error}}</div>
+
+	<form name="searchUser" ng-submit="search(username)">
+		<input type="search" required placeholder="enter user here" ng-model="username">
+		<input type="submit" value="Search">
+	</form>
+
+    <div ng-include="'userdetails.html'" ng-show="user"></div>
+</body>
+
+</html>
